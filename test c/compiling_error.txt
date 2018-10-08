@@ -1,0 +1,38 @@
+C:\Users\My\Desktop\Embedded C\test c\struct.c: In function 'push':
+C:\Users\My\Desktop\Embedded C\test c\struct.c:86:13: error: 'StackNode {aka struct stackNode}' has no member named 'nextPtr'; did you mean 'nextptr'?
+      newPtr ->nextPtr = *topPtr;
+             ^~
+C:\Users\My\Desktop\Embedded C\test c\struct.c: At top level:
+C:\Users\My\Desktop\Embedded C\test c\struct.c:97:6: error: conflicting types for 'pop'
+  int pop (StackNode *topPtr)
+      ^~~
+C:\Users\My\Desktop\Embedded C\test c\struct.c:15:5: note: previous declaration of 'pop' was here
+ int pop(StackNodePtr *topPtr);
+     ^~~
+C:\Users\My\Desktop\Embedded C\test c\struct.c: In function 'pop':
+C:\Users\My\Desktop\Embedded C\test c\struct.c:100:4: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int'
+    int popValue; /* node value*/
+    ^~~
+C:\Users\My\Desktop\Embedded C\test c\struct.c:102:4: error: 'tempPtr' undeclared (first use in this function)
+    tempPtr = topPtr;
+    ^~~~~~~
+C:\Users\My\Desktop\Embedded C\test c\struct.c:102:4: note: each undeclared identifier is reported only once for each function it appears in
+C:\Users\My\Desktop\Embedded C\test c\struct.c:103:24: error: invalid type argument of '->' (have 'StackNode {aka struct stackNode}')
+    popValue = (*topPtr)->data;
+                        ^~
+C:\Users\My\Desktop\Embedded C\test c\struct.c:104:23: error: invalid type argument of '->' (have 'StackNode {aka struct stackNode}')
+    *topPtr = (*topPtr)->nextPtr;
+                       ^~
+C:\Users\My\Desktop\Embedded C\test c\struct.c: In function 'printStack':
+C:\Users\My\Desktop\Embedded C\test c\struct.c:114:40: error: expected expression before ')' token
+      printf("The stack is empty \n\n", );
+                                        ^
+C:\Users\My\Desktop\Embedded C\test c\struct.c:118:33: error: expected expression before ')' token
+      printf("the satck is :\n", );
+                                 ^
+C:\Users\My\Desktop\Embedded C\test c\struct.c:122:31: error: 'StackNode {aka struct stackNode}' has no member named 'nextPtr'; did you mean 'nextptr'?
+        currentPtr = currentPtr-> nextPtr;
+                               ^~
+C:\Users\My\Desktop\Embedded C\test c\struct.c:124:25: error: expected expression before ')' token
+      printf("NULL\n\n", );
+                         ^
