@@ -3,7 +3,7 @@
 
 void main(void)
 {
-	int num,i;
+	int num,i,k=0;
 	
 	 /*Ask The user Enter number 10*/
 	printf("pleas Enter number 10:\n"); 
@@ -15,9 +15,9 @@ void main(void)
 	
 	printf("Enter the value To search :");
 	scanf("%d",&num);
-	if (num == i)
+	if (num == i){
 		printf("Value is Exist at element number : %d",i);
-	else 
+	}else{ 
 		printf("erro not vaule number \n");
-	
+	}
 }
